@@ -1,16 +1,17 @@
 #include <stdio.h>
 
-int square(int a)
+void print_star()
 {
-    return (a * a);
+    int i;
+    for(i = 0; i < 10; i++)
+        printf("*");
 }
 
-int main()
+int main(void)
 {
-    int a = 2;
+    print_star();
+    print_star();
+    print_star();
 
-    a = square(a);
-    printf("a=%i\n", a);
-
+    return 0;
 }
-
